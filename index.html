@@ -42,7 +42,7 @@
 					<h2>Minecraft FairyLand 服务器</h2>
 					<p>生存、RPG、副本</p>
 				</div>
-				<h1><a href="javascript:void(0)"><p id="copyBtn" data-clipboard-text="mc.mcfl.top>获取地址</p></a></h1>
+				<h1><a class="copyipbtn" href="javascript:void(0)" onclick="copyip" data-clipboard-text="mc.mcfl.top>获取地址</a></h1>
 				<h1><a target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
 				<h1><a href="map.mcfl.top">查看地图</a></h1>
 			</div>
@@ -83,7 +83,7 @@
 					scroll()
 				});.
 			function copyip(params) {
-        			var clipboard=new ClipboardJS('#copyBtn');
+        			var clipboard=new ClipboardJS('#copyipbtn');
 				clipboard.on('success', function(e) {
 					alert('服务器地址已复制');
       				 });
