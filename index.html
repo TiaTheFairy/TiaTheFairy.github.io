@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="static/css/main.css">
 		<link rel="shortcut icon" href="img/cargo_managere.png" type="image/x-icon">
 		<script src="static/js/main.js"></script>
+		<script src="static/js/clipboard.min.js"></script>
 		<style type="text/css">
 			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 480px;height: 720px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
 		</style>
@@ -44,9 +45,7 @@
 					<h2>Minecraft FairyLand 服务器</h2>
 					    <p>生存、RPG、副本</p>
 					</div>
-				<div class="copy-ip">
-					<h1><a><p data-clipboard-text="mc.mcfl.top>加入游戏</p></a></h1>
-				</div>
+				<h1><a id="copyBtn" data-clipboard-text="mc.mcfl.top>加入游戏</a></h1>
 				<h1><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
 				<h1><a href="1.html">查看地图</a></h1>
 			</div>
@@ -88,7 +87,7 @@
 					scroll()
 				});
 			function copyip(params) {
-        			var clipboard=new ClipboardJS('.copy-ip');
+        			var clipboard=new ClipboardJS('#copyBtn');
 				clipboard.on('success', function(e) {
 					alert('服务器地址已复制');
       				 });
