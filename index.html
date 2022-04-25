@@ -39,9 +39,11 @@
 			<div class="join-buttom">
 				<div class="join-item">
 					<h2>Minecraft FairyLand 服务器</h2>
+					<p>纯净 1.16.5</p>
 					<p>生存、RPG、副本</p>
+					<p>mc.mcfl.top</p>
 				</div>
-				<h1><a class="copyipbtn" href="javascript:void(0)" onclick="copyip" data-clipboard-text="mc.mcfl.top">获取地址</a></h1>
+				<h1><a href="javascript:void(0)" onclick="copyip">获取地址</a></h1>
 				<h1><a target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
 				<h1><a href="map.mcfl.top">查看地图</a></h1>
 			</div>
@@ -81,15 +83,19 @@
 				$(window).on('scroll', function() {
 					scroll()
 				});.
-			function copyip(params) {
-        			var clipboard=new ClipboardJS('#copyipbtn');
-				clipboard.on('success', function(e) {
-					alert('服务器地址已复制');
-      				 });
-       				clipboard.on('error', function(e) {
-					alert('发生错误. Error: failedFunction_COPYIP');
-       				});
-    			}();
+			function copyip() {
+				const btn = document.querySelector('#btn');
+				btn.addEventListener('click',() => {
+					const input = document.createElement('input');
+					document.body.appendChild(input);
+					input.setAttribute('value', 'mc.mcfl.top');
+					input.select();
+				        if (document.execCommand('copy')) {
+ 						document.execCommand('copy');
+ 				       		console.log('复制成功');
+ 				   	}
+				 document.body.removeChild(input);
+			})
 		</script>
 	</body>
 </html>
