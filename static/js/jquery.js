@@ -9470,27 +9470,3 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }
 
 })( window );
-
-
-console.group("作者QQ 1612704618");
-    console.log("%c%c博客名称%c蕊蕊博客", "line-height:28px;", "line-height:28px;padding:4px;background:#ee1d24;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#3fa9f5;line-height:28px;font-size:16px;");
-    console.log("%c%c企鹅号码%c1612704618", "line-height:28px;", "line-height:28px;padding:4px;background:darkorange;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#ff9900;line-height:28px;font-size:16px;");
-    console.log("%c%c网站地址%chttp://www.svipzy.cn/", "line-height:28px;", "line-height:28px;padding:4px;background:#0072bc;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#008000;line-height:28px;font-size:16px;");
-    console.log("%c%c作者版权%c 所 有 啦 啦 啦", "line-height:28px;", "line-height:28px;padding:4px;background:#00a650;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#f0f;line-height:28px;font-size:16px;");
-    //下一段
-console.groupEnd();
-    //下一段
-　　console.group("加入我们");
-    console.log("%c这里有我的联系方式(o^.^o) 交流群：1121140226", "color:#00cc00");
-	console.log("%c这里有我的联系方式(o^.^o) 点击加入：https://jq.qq.com/?_wv=1027&k=utWiichn", "color:#00cc00");
-
-console.groupEnd();
-
-	console.info('Version 3.0, Designed by SVIPZY.cn.');
-	
-	//下一段
-    window.console && window.console.log("%c青春互联%c Version: Copyright \u00a9 2016-%s", "color:#52BAF5; text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:5em", "font-size:12px;color:#5db8f8;", (new Date).getFullYear());
-    console.log("%c站长寄语：相信你能找到这里，不是程序员也会是个很厉害的人，如果你也喜欢我的网站就来联系我吧!我在时间的尽头等你٩(๑❛ᴗ❛๑)۶", "font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;color:#F87D53;");
-    console.log("%c温馨提示：发现Bug请及时跟我反馈，有红包相赠哦(・ω・)", "font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;color:#F87D53;");
-    console.log("%c这里有我的联系方式(o^.^o) http://wpa.qq.com/msgrd?v=3&uin=1612704618&site=qq&menu=yes", "color:#00cc00");
-	
