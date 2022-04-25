@@ -27,12 +27,12 @@
 		<div id="menu-box">
 			<div class="menu">
 				<div class="menu-item">
-					<h2 class="logo"><a href="index.php">X X X 服务器</a></h2>
+					<h2 class="logo"><a href="index.php">FairyLand 服务器</a></h2>
 					<div class="menu-item-list">
-						<a href="1.html" target="_blank">游戏</a>
-						<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi"></a>
+						<p data-clipboard-text="mc.mcfl.top">加入游戏</p>
+						<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">QQ</a>
 						<a href="1.html" target="_blank">地图</a>
-						<a href="index.php">首页</a>
+
 					</div>
 				</div>
 			</div>
@@ -40,12 +40,14 @@
 		<div id="banner">
 			<div class="join-buttom">
 				<div class="join-item">
-					<h2>Minecraft x x x 服务器</h2>
-					    <p>SMP、RPG、INSTANCE</p>
+					<h2>Minecraft FairyLand 服务器</h2>
+					    <p>生存、RPG、副本</p>
 					</div>
+				<div class="copy-ip">
+					<h1><p data-clipboard-text="mc.mcfl.top">加入游戏</p></h1>   
+				</div>
 				<h1><a href="1.html">加入游戏</a></h1>
-				<h1><a href="1.html">加入QQ群</a></h1>
-				<h1><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi"></a></h1>
+				<h1><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
 				<h1><a href="1.html">查看地图</a></h1>
 			</div>
 		</div>
@@ -53,11 +55,11 @@
 			<div class="box"><a href="1.html">&#9668&#9668 &nbsp; &nbsp;加入我们</a></div>
 			<div class="item-page-box">
 				<div class="item-page">
-					<h2>欢迎来到Minecraft X X X服务器</h2>
-					当前网页在线1人					当前时间2020-6-16 16:16					  <hr>
+					<h2>欢迎来到Minecraft FairyLand服务器</h2>
 					   <div class="item-font">
-						<h3>服务器历史</h3>
+						<h3>服务器资讯</h3>
 						<p></p>
+						<p><a target="_blank" href="https://docs.qq.com/doc/DZXlxQkFwUlBjbFJw">FairyLand 玩家许可协议 (点击访问)</a></p>
 					</div>
 				</div>
 			</div>
@@ -66,7 +68,7 @@
 			</div>
 		</div>	
 		<script src="static/js/jquery.js"></script>
-	<script>
+		<script>
 			function scroll() {
 					var top = $("#item-box").offset().top;
 					var scrollTop = $(window).scrollTop();
@@ -85,6 +87,15 @@
 				$(window).on('scroll', function() {
 					scroll()
 				});
+			function copyip(params) {
+        			var clipboard=new ClipboardJS('.copy-ip');
+				clipboard.on('success', function(e) {
+					alert('服务器地址已复制');
+      				 });
+       				clipboard.on('error', function(e) {
+					alert('发生错误. Error: failedFunction_COPYIP');
+       				});
+    			}();
 		</script>
 	</body>
 </html>
