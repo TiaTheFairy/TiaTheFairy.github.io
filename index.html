@@ -44,9 +44,9 @@
 					<p>生存、RPG、副本</p>
 					<p id="ip">mc.mcfl.top</p>
 				</div>
-				<h1><button href="javascript:void(0)" onclick="copyip()">获取地址</button></h1>
-				<h1><button target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</button></h1>
-				<h1><button href="map.mcfl.top">查看地图</button></h1>
+				<h1><a href="javascript:void(0)" onclick="copyip()">获取地址</a></h1>
+				<h1><a target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
+				<h1><a href="map.mcfl.top">查看地图</a></h1>
 			</div>
 		</div>
 		<div id="item-box">
@@ -85,10 +85,17 @@
 					scroll()
 				});.
 			function copyip() {
-				var Ele = document.getElementById("ip");
-				Ele.select();
-				document.execCommand("Copy");
-				alert("已复制");
+				const copyToClipboard = str => {
+  					const el = document.createElement('textarea');
+  					el.value = str;
+    					el.setAttribute('readonly', 'testtest');
+  					el.style.position = 'absolute';
+  					el.style.left = '-9999px';
+  					document.body.appendChild(el);
+  					el.select();
+  					document.execCommand('copy');
+  					document.body.removeChild(el);
+				};
 			}
 		</script>
 	</body>
