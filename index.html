@@ -9,61 +9,6 @@
 		<link rel="shortcut icon" href="img/cargo_managere.png" type="image/x-icon">
 		<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 		<script src="static/js/main.js"></script>
-		<style type="text/css">
-			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 480px;height: 720px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
-		</style>
-	</head>
-	<script>
-		document.onreadystatechange=function(){
-			if(document.readyState=="complete"){
-				$(".loading").fadeOut();
-			}
-		}
-	</script>
-	<body>
-		<div class="loading">
-			<div class="loading-img">
-			</div>
-		</div>
-		<div id="menu-box">
-			<div class="menu">
-				<div class="menu-item">
-					<h2 class="logo"><a href="mcfl.top">FairyLand 服务器</a></h2>
-					<div class="menu-item-list">
-						<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">QQ</a>
-						<a href="1.html" target="_blank">地图</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="banner">
-			<div class="join-buttom">
-				<div class="join-item">
-					<h2>Minecraft FairyLand 服务器</h2>
-					<p>纯净 1.16.5</p>
-					<p>生存、RPG、副本</p>
-					<p id="ip">mc.mcfl.top</p>
-				</div>
-				<h1><a href="" onclick="copyip();return false;">获取地址</a></h1>
-				<h1><a target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
-				<h1><a href="map.mcfl.top" target="_blank">查看地图</a></h1>
-			</div>
-		</div>
-		<div id="item-box">
-			<div class="item-page-box">
-				<div class="item-page">
-					<h2>欢迎来到Minecraft FairyLand服务器</h2>
-					   <div class="item-font">
-						<h3>服务器资讯</h3>
-						<p></p>
-						<p><a target="_blank" href="https://docs.qq.com/doc/DZXlxQkFwUlBjbFJw">FairyLand 玩家许可协议 (点击访问)</a></p>
-					</div>
-				</div>
-			</div>
-			<div id="footer">
-				<p id="counter"></p>
-			</div>
-		</div>	
 		<script src="static/js/jquery.js"></script>
 		<script>
 			function scroll() {
@@ -98,5 +43,61 @@
 				};
 			}
 		</script>
+		<script>
+			document.onreadystatechange=function(){
+				if(document.readyState=="complete"){
+					$(".loading").fadeOut();
+				}
+			}
+		</script>
+		<style type="text/css">
+			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #FCFCFC;}.loading-img{width: 480px;height: 720px;margin: auto;background: url(static/images/1612704618.gif);}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#C6CDD4;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#C6CDD4;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:white;font-size:20px;}.menu-item h2 a:hover{color:white;font-size:27px;}#item-box{height: 1150px;background:white;overflow: hidden;}
+		</style>
+	</head>
+
+	<body>
+		<div class="loading">
+			<div class="loading-img">
+			</div>
+		</div>
+		<div id="menu-box">
+			<div class="menu">
+				<div class="menu-item">
+					<h2 class="logo"><a href="mcfl.top">FairyLand 服务器</a></h2>
+					<div class="menu-item-list">
+						<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">QQ</a>
+						<a href="1.html" target="_blank">地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="join-buttom">
+				<div class="join-item">
+					<h2>Minecraft FairyLand 服务器</h2>
+					<p>纯净 1.16.5</p>
+					<p>生存、RPG、副本</p>
+					<p id="ip">mc.mcfl.top</p>
+				</div>
+				<h1><a href="javascript:void(0)" onclick="copyip();return false;">获取地址</a></h1>
+				<h1><a target="_parent" href="https://qm.qq.com/cgi-bin/qm/qr?k=6HfmQatxxmrymq_VQg-PH0NQ8mraPe-X&jump_from=webapi">加入QQ群</a></h1>
+				<h1><a href="map.mcfl.top" target="_blank">查看地图</a></h1>
+			</div>
+		</div>
+		<div id="item-box">
+			<div class="item-page-box">
+				<div class="item-page">
+					<h2>欢迎来到Minecraft FairyLand服务器</h2>
+					   <div class="item-font">
+						<h3>服务器资讯</h3>
+						<p></p>
+						<p><a target="_blank" href="https://docs.qq.com/doc/DZXlxQkFwUlBjbFJw">FairyLand 玩家许可协议 (点击访问)</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<p id="counter"></p>
+			</div>
+		</div>	
 	</body>
 </html>
