@@ -29,22 +29,18 @@
 				$(window).on('scroll', function() {
 					scroll()
 				});
-			var copy = function (str) {
-				var div = document.createElement("div");
-				div.innerHTML = '<span>' + str + '</span>';
-				document.body.appendChild(div);
-				var range = document.createRange();
-				var selection = window.getSelection();
-				selection.removeAllRanges();
-				range.selectNodeContents(div);
-				selection.addRange(range);
-				document.execCommand('copy');
-				selection.removeAllRanges();
-				document.body.removeChild(div);
-			};
-			function copyip() {
-				alert("test!");
-  				copy("testtest!!);
+			function copy_to_clipboard(txt_str){
+				var ip = "mc.mcfl.top";
+   				const input = document.createElement('input');
+    				document.body.appendChild(input);
+    				input.setAttribute('value', txt_str);
+    				input.select();
+    				if (document.execCommand('copy')) {
+					document.execCommand('copy');
+        				console.log('复制成功');
+        				Alert(500,'复制成功');
+    				}
+ 				document.body.removeChild(input);
 			}
 		</script>
 		<script>
