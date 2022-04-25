@@ -29,18 +29,22 @@
 				$(window).on('scroll', function() {
 					scroll()
 				});
+			var copy = function (str) {
+				var div = document.createElement("div");
+				div.innerHTML = '<span>' + str + '</span>';
+				document.body.appendChild(div);
+				var range = document.createRange();
+				var selection = window.getSelection();
+				selection.removeAllRanges();
+				range.selectNodeContents(div);
+				selection.addRange(range);
+				document.execCommand('copy');
+				selection.removeAllRanges();
+				document.body.removeChild(div);
+			};
 			function copyip() {
-				alert("test!")
-  				const el = document.createElement('textarea');
-  				el.value = str;
-    				el.setAttribute('readonly', 'testtest');
-  				el.style.position = 'absolute';
-  				el.style.left = '-9999px';
-  				document.body.appendChild(el);
-  				el.select();
-  				document.execCommand('copy');
-  				document.body.removeChild(el);
-				return false;
+				alert("test!");
+  				copy("testtest!!);
 			}
 		</script>
 		<script>
