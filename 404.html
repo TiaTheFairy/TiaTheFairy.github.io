@@ -5,16 +5,53 @@
         <meta charset="utf-8">
         <title>Page Not Found</title>
 
-        <link rel="stylesheet" type="text/css" href="./main.css">
+        <style>
+            body{
+                background-color: rgb(199, 199, 113);
+                text-align: center; 
+	            margin: auto;
+            }
+            .title{
+                font-size: 80px;
+                font-weight: bolder;
+            }
+            #subtitle{
+                font-size: 30px;
+            }
+            .content404{
+                font-size: 20px;
+                color: red;
+            }
+            #currenturl{
+                color: aqua
+            }
+            #navtitle{
+                font-size: 20px;
+            }
+            .nav{
+                font-size: 15px;
+            }
+        </style>
 
+        <script type="text/javascript" src="./res/banner.js"></script>
+        <link rel="stylesheet" type="text/css" href="./res/banner.css">
     </head>
 
     <body>
         <div>
+            <div class="banner">
+                <img id="banner-logo" class="banner-contents" src="./res/img/logo.png" width="40px">
+                <div id="banner-text" class="banner-contents" onclick="bannerclick('index')">首页</div>
+                <div id="banner-text" class="banner-contents" onclick="bannerclick('homepage')">个人主页</div>
+                <div id="banner-text" class="banner-contents" onclick="bannerclick('git')">Git</div>
+                <div id="banner-text" class="banner-contents" onclick="bannerclick('blog')">Blog</div>
+                <div id="banner-text" class="banner-contents" onclick="bannerclick('mc')">Minecraft</div>
+            </div>
+
             <br><br><br>
 
-            <div id="title">404</div>
-            <div id="subtitle">Page Not Found</div>
+            <div class="title">404</div>
+            <div class="title" id="subtitle">Page Not Found</div>
 
             <br><br>
 
@@ -38,8 +75,7 @@
         </div>
 
         <script>
-            var url = window.location.href;
-            document.getElementById("currenturl").innerHTML = url;
+            document.getElementById("currenturl").innerHTML = window.location.href;
         </script>
     </body>
 
